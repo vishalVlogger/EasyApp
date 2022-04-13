@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:id="@+id/productItem"
+    android:background="@drawable/rectangle_gray_border_home">
+
+    <LinearLayout
+        android:id="@+id/itemLayout"
+        android:background="@drawable/ripple_effect"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/perOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_green_border"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:paddingLeft="10dp"
+                android:paddingTop="6dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="6dp"
+                android:text="@string/_20_off"
+                android:textColor="@color/green"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/deleteProductFromCard"
+                android:text="Delete"
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:background="@drawable/rectangle_green_btn"
+                android:layout_width="80dp"
+                android:layout_height="25dp"/>
+            <Button
+                android:id="@+id/deleteProductFromFavList"
+                android:text="Remove"
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:background="@drawable/rectangle_green_btn"
+                android:layout_width="80dp"
+                android:layout_height="25dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <TextView
+                android:id="@+id/txtOutOfStock"
+                android:text="Out of Stock"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:elevation="10dp"
+                android:visibility="gone"
+                android:background="@drawable/out_of_stock_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle_gray_box_home"
+                app:riv_border_color="@color/transparent"
+                app:riv_border_width="0dip"
+                app:riv_corner_radius="10dp"
+                app:riv_mutate_background="true"
+                app:riv_oval="false"
+                app:riv_tile_mode="clamp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/packAgeItems"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:background="@drawable/rounded_grey_stroke"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:text="@string/_1_kg"
+            android:textColor="@color/green"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:text="@string/coriander_product_ntitle_will_be_here"
+            android:textColor="@color/txt_black"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/priceLayout"
+        android:layout_below="@id/itemLayout"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:text="@string/_12"
+                android:textColor="@color/green"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/txtPrice"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:text="12"
+                android:textColor="@color/green"
+                android:textSize="22dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtMrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:background="@drawable/strike_line"
+                android:text="@string/_15"
+                android:gravity="end"
+                android:textColor="@color/subtxt_gray"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/mrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/txtMrp"
+                android:background="@drawable/strike_line"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="15"
+                android:textColor="@color/subtxt_gray"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/priceLayout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/addBTNframe"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cardBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_addItem"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:background="@drawable/rectangle_green_btn"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textStyle="bold"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+            <RelativeLayout
+                android:id="@+id/li_cart"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="25dp"
+                android:background="@drawable/rectangle_green_btn"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/li_sub"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/circle_green">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_sub"
+                        app:tint="@color/white" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:visibility="invisible"
+                    android:layout_toRightOf="@id/li_sub"
+                    android:layout_toLeftOf="@id/li_add"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"/>
+                <LinearLayout
+                    android:id="@+id/li_add"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/circle_green">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_add"
+                        app:tint="@color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.RequestProduct">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:layout_height="?actionBarSize"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:background="@drawable/ripple_effect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.3dp"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:id="@+id/txt_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Product"
+            android:textSize="18sp"
+            android:layout_marginLeft="17.3dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:textColor="@color/pureBlack"/>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/profileback"
+                android:layout_marginTop="-50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="135dp"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:text=""
+                    android:textColor="@color/pureBlack"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:text=""
+                    android:textColor="@color/pureBlack"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/rectangle_profile_gray"
+                    android:orientation="horizontal"
+                    android:paddingLeft="14.4dp"
+                    android:paddingTop="8.5dp"
+                    android:paddingRight="11dp"
+                    android:paddingBottom="7.5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_profile_gray" />
+
+                    <TextView
+                        android:id="@+id/userNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6.4dp"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:text="@string/_91_99999xxxxx"
+                        android:textColor="@color/pureBlack"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:text="Product Name *"
+                    android:textSize="13dp"
+                    android:textColor="@color/primaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/productName"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/productDetails"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:layout_below="@id/txtName"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/productName"
+                    android:background="@color/grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtDetails"
+                    android:text="Product Details *"
+                    android:textSize="13dp"
+                    android:textColor="@color/primaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/productDetails"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:background="@color/white"
+                    android:imeOptions="actionGo"
+                    android:padding="10dp"
+                    android:layout_below="@id/txtDetails"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/productDetails"
+                    android:background="@color/grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/sendRequest"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30.2dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30.2dp"
+                android:background="@drawable/rectangle_green"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Send Request"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

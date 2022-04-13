@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.ContactUs">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:layout_height="?actionBarSize"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:background="@drawable/ripple_effect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.3dp"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:id="@+id/txt_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="18sp"
+            android:layout_marginLeft="17.3dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:textColor="@color/pureBlack"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_gray_boxprofile"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="9dp"
+                android:paddingRight="19.3dp"
+                android:paddingBottom="9dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_location_icon"
+                    android:padding="10dp"
+                    android:background="@drawable/rectangle_gray_box_home"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:text="Bambhori Pr. Chandsar, Jalgaon - 425001"
+                    android:textColor="@color/txt_black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_gray_boxprofile"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="9dp"
+                android:paddingRight="19.3dp"
+                android:paddingBottom="9dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/common_full_open_on_phone"
+                    android:padding="10dp"
+                    android:background="@drawable/rectangle_gray_box_home"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:text="0257 225 8393"
+                    android:textColor="@color/txt_black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_gray_boxprofile"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="9dp"
+                android:paddingRight="19.3dp"
+                android:paddingBottom="9dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@android:drawable/sym_action_email"
+                    android:padding="10dp"
+                    android:background="@drawable/rectangle_gray_box_home"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:text="sscoetjal@gmail.com"
+                    android:textColor="@color/txt_black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

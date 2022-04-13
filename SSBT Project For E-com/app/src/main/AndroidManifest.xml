@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.appdroid.ssbtproject">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.appdroid.ssbtproject.OTP.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DandagezMart">
+        <activity android:name="com.appdroid.ssbtproject.Activity.RequestProduct"></activity>
+        <activity android:name="com.appdroid.ssbtproject.Activity.PaginationTesting" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.PrivacyPolicy" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.AboutUs" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.ContactUs" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.SettingActivity" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.VideoPlayer" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.DeliveryBoyProfile" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.DailyOrderActivity" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.OrderdProductList" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.ListingProducts" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.ProductDetails" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.OrderConfurm" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.MyOrders" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.EditProfile" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.Dashboard" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.ForgotPasswordActivity" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.ChangesPasswordActivity" />
+        <activity android:name="com.appdroid.ssbtproject.VerifyOtpActivity" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.MobileNumberActivity" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.RegisterActivity" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.WalkthroughActivity" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.LoginActivity" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.ChangePassword" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.AddressActivity" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.CheckoutActivity" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.AddYourDetails" />
+        <activity android:name="com.appdroid.ssbtproject.Activity.ProductActivity" />
+        <activity
+            android:name="com.appdroid.ssbtproject.Activity.SplashActivity"
+            android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="dandagez.page.link"
+                    android:scheme="https" />
+                <data
+                    android:host="mahanews.live"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.appdroid.ssbtproject.MainActivity" />
+
+        <receiver
+            android:name="com.appdroid.ssbtproject.OTP.SmsBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.appdroid.ssbtproject.Holder.FirebasePushNotificationService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+    </queries>
+</manifest>

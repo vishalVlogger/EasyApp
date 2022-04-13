@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>keyWord testing Page</title>
+</head>
+<body>
+    <h1>This iS TEsting</h1>
+    <script>
+        var arrayList = [];
+
+        function createKeywords(name) 
+        {   
+            const arrName = [];
+            let curName = '';
+            name.split('').forEach(letter => {
+            curName += letter;
+            arrName.push(curName.trim());
+            });
+            arrayList = arrayList.concat(arrName);
+            
+        }
+
+        function getKeyword(searchString)
+        {
+            createKeywords(searchString.toLowerCase());
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.AddYourDetails">
+
+    <RelativeLayout
+        android:id="@+id/backLayout"
+        android:padding="5dp"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/back"
+            android:background="@drawable/ripple_effect"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Add Delivery Address"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/pureBlack"
+            android:layout_toRightOf="@id/back"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/backLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:text="Full Name *"
+                    android:textSize="13dp"
+                    android:textColor="@color/primaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/edName"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:layout_below="@id/txtName"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/edName"
+                    android:background="@color/grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtContact"
+                    android:text="Mobile No. *"
+                    android:textSize="13dp"
+                    android:textColor="@color/primaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/edContact"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:layout_below="@id/txtContact"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/edContact"
+                    android:background="@color/grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtGmail"
+                    android:text="Email ID *"
+                    android:textSize="13dp"
+                    android:textColor="@color/primaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/edEmail"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:layout_below="@id/txtGmail"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/edEmail"
+                    android:background="@color/grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:text="Address *"
+                    android:textSize="13dp"
+                    android:textColor="@color/primaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/edAddress"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:layout_below="@id/txtAddress"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/edAddress"
+                    android:background="@color/grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtPin"
+                    android:text="Pincode *"
+                    android:textSize="13dp"
+                    android:textColor="@color/primaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/edPin"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:inputType="number"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:layout_below="@id/txtPin"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/edPin"
+                    android:background="@color/grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/save"
+                android:text="Save &amp; Continue"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:background="@drawable/blue_btn"
+                android:layout_margin="30dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

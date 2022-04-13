@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android projects/Projects 2022/SSBT Project/From Amit/SSBT Project/SSBT Project For E-com/app/src/main/res/drawable/ic_contact_us.xml" value="0.1925" />
+        <entry key="..\:/Android projects/Projects 2022/SSBT Project/From Amit/SSBT Project/SSBT Project For E-com/app/src/main/res/drawable/ic_easy_shop.xml" value="0.1925" />
+        <entry key="..\:/Android projects/Projects 2022/SSBT Project/From Amit/SSBT Project/SSBT Project For E-com/app/src/main/res/drawable/login_btn.xml" value="0.1925" />
+        <entry key="..\:/Android projects/Projects 2022/SSBT Project/From Amit/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/fragment_home.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android projects/Projects 2022/SSBT Project/From Amit/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_home.xml" value="0.30289017341040464" />
+        <entry key="..\:/Android projects/Projects 2022/SSBT Project/From Amit/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_selling.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android projects/Projects 2022/SSBT Project/From Amit/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/slider_item.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android projects/Projects 2022/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_product_details.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android projects/Projects 2022/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_splash.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android projects/Projects 2022/SSBT Project/SSBT Project For E-com/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.203" />
+        <entry key="..\:/Major project/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_change_password.xml" value="0.33" />
+        <entry key="..\:/Major project/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_dashboard.xml" value="0.17074275362318841" />
+        <entry key="..\:/Major project/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_login.xml" value="0.17074275362318841" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/drawable/black_btn.xml" value="0.1375" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/drawable/blue_btn.xml" value="0.1375" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/drawable/circle_lightgreen.xml" value="0.183" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/drawable/ic_add_more.xml" value="0.132" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/drawable/ic_easy_shop.xml" value="0.1375" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/drawable/rectangle_left_cure_blue.xml" value="0.1375" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/drawable/rectangle_profile_gray.xml" value="0.1375" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_about_us.xml" value="0.20185185185185187" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_add_your_details.xml" value="0.20185185185185187" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_address.xml" value="0.20185185185185187" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_change_password.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_changes_password.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_checkout.xml" value="0.25" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_contact_us.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_daily_order.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_dashboard.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_delivery_boy_profile.xml" value="0.21203703703703702" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_edit_profile.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_forgot_password.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_listing_products.xml" value="0.21203703703703702" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_login.xml" value="0.21203703703703702" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_main.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_mobile_number.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_my_orders.xml" value="0.21203703703703702" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_order_confurm.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_orderd_product_list.xml" value="0.21203703703703702" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_pagination_testing.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_privacy_policy.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_product.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_product_details.xml" value="0.21203703703703702" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_register.xml" value="0.21203703703703702" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_request_product.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_setting.xml" value="0.21203703703703702" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_splash.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_verify_otp.xml" value="0.21203703703703702" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_video_player.xml" value="0.21203703703703702" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/activity_walkthrough.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/cart_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/complete_your_profile.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/custome_layout.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/daily_order_confurmation.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/dashboard_product_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/fragment_cart.xml" value="0.21203703703703702" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/fragment_daily_order.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/fragment_detail.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/fragment_fav_products.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/fragment_favourite.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/fragment_home.xml" value="0.3155829596412556" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/fragment_home_swap_banner.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/fragment_profile.xml" value="0.21203703703703702" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/fragment_search.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/fragment_view_pager1.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_addresslist.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_banner.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_categories.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_coupon.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_delete.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_favourites.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_home.xml" value="0.3117386489479513" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_label.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_listing.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_listing_gride.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_location.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_notificationlist.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_orders.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_payment.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_recyclerview.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_search.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_select_language.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_selling.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_spinner_address.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_spinnergreen.xml" value="0.13958333333333334" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/item_veg.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/login_confurmaion_dialog.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/no_address_layout.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/not_avalbel.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/oders_product_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/out_of_date_dialog.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/packing_combo_dialog.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/place_order_confermation__dialog.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/pop_location.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/popup_choose_date_time.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/popup_location.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/popup_logout.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/popup_selectaddress.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/progress_dialog.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/ratting_dialog_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/remove_item_from_daily_order_list_confurmaion_dialog.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/review_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/similar_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/slider_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/sorting_bottom_sheat_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/submit_pincode.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/toolbar_filter.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/toolbar_order_search.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/under_maintenance_dialog.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/SSBT Project For E-com/app/src/main/res/layout/update_address_dialog.xml" value="0.29322916666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

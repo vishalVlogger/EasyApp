@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="35dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.FavProducts">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        app:cardElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/card_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="Favourite"
+            android:textColor="@color/pureBlack"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_below="@id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/centerProgressBar"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            app:lottie_rawRes="@raw/loading_dialog"
+            app:lottie_autoPlay="true"
+            app:lottie_speed="2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            app:lottie_loop="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productsList"
+            android:layout_above="@id/progressBar"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:lottie_speed="2"
+            android:layout_alignParentBottom="true"
+            app:lottie_rawRes="@raw/loading_dialog"
+            app:lottie_autoPlay="true"
+            android:layout_centerHorizontal="true"
+            app:lottie_loop="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <RelativeLayout
+            android:id="@+id/noDataLayout"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/bucket" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@id/empty"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/no_item_in_your_nfavourites"
+                android:textAlignment="center"
+                android:textColor="@color/smoke_gray"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="250dp"
+            android:id="@+id/not_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animNotLogin"
+                android:layout_centerHorizontal="true"
+                app:lottie_rawRes="@raw/login_anim"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:layout_marginTop="20dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:id="@+id/txt"
+                android:text="You need to log in first for adding product in favorite list.."
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_below="@id/animNotLogin"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/loginBTN"
+                android:layout_below="@+id/txt"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/blue_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>View Category</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    <script>
+        var page = "categoryImg";
+    </script>
+    </head>
+    
+<body>
+<section id="navbar">
+    <div class="float-left" style="padding: 10px;margin-top: 5px;"><a class="openbtn" onclick="openNav()"><i class="fa fa-bars"></i></a></div>
+    <div class="float-right">
+        <img class="" src="IMG/wlogo.png" height="60">
+    </div>
+</section>
+<div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+       <ul class="nav flex-column">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-archive"></i> Product</a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="add-product.html">Add Product</a>
+                  <a class="dropdown-item" href="view-product.html">View Product</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle onlink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bookmark"></i> Category</a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="add-category.html">Add Category</a>
+                  <a class="dropdown-item" href="view-category.html">View Category</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-briefcase"></i> Delivery Boy</a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="add-delivery-boy.html">Add Delivery Boy</a>
+                  <a class="dropdown-item" href="view-delivery-boy.html">View Delivery Boy</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="view-order.html"><i class="fa fa-gift"></i> Orders</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-file-photo-o"></i> Slider</a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="add-slider.html">Add Slider</a>
+                  <a class="dropdown-item" href="view-slider.html">View Slider</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="user-search.html"><i class="fa fa-users"></i> User Search</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="user-request.html"><i class="fa fa-retweet"></i> User Request</a>
+               </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order-summary.html"><i class="fa fa-pencil-square-o"></i> Orders Summary</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="signOut()"><i class="fa fa-sign-out"></i> Logout</a>
+            </li>
+        </ul>
+    </div>
+    <div id="main">
+       <div id="msg"></div>
+        <div class="container">
+            <h4 class="text-center"><b>View Categories</b></h4>
+            <hr>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="form-group">
+                       <label for="type">What you Want to Delete</label>
+                        <select name="" id="type" class="form-control" onchange="getSelectValue(this.value)">
+                            <option value="" selected disabled>Select</option>
+                            <option>Main Category</option>
+                            <option>Pin Code</option>
+                        </select>
+                    </div>
+                    <!--<div class="form-group d-none" id="subDiv">
+                        <label for="sub">Select Subject</label>
+                        <select id="sub" class="form-control">
+                            <option selected disabled value="">Select</option>
+                        </select>
+                    </div>-->
+                    <div class="form-group d-none" id="mainDiv">
+                        <label for="mainCat">Select Main Category</label>
+                        <select id="mainCat" class="form-control">
+                            <option selected disabled value="">Select</option>
+                        </select>
+                    </div>
+                    <div id="subCatDiv" class="form-group d-none">      
+                       <label>Sub Category</label>
+                       <select id="subCat" class="form-control" multiple>
+                           <option disabled>Select Sub Category</option>
+                       </select>
+                       <small>Press Ctl And Select</small>
+                    </div>
+                    <div class="form-group d-none" id="pinDiv">
+                        <label for="pin">Select Pin Code</label>
+                        <select id="pin" class="form-control">
+                            <option selected disabled value="">Select</option>
+                        </select>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-primary mybtn btn-block" onclick="getData()"><i class=" fa fa-trash"></i> Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/browser-image-compression@latest/dist/browser-image-compression.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-messaging.js"></script> 
+    <script src="JS/dbConnection.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <script src="JS/logout.js"></script>
+    <script src="JS/view-category.js"></script>
+    <script src="JS/notification.js"></script>
+    <script>
+    function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+</script>
+    </body>
+</html>

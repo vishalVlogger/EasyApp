@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android projects/Projects 2022/Guruma Enterprises/Delivery Boy/App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2890625" />
+        <entry key="..\:/Android projects/Projects 2022/Guruma Enterprises/Delivery Boy/App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.159375" />
+        <entry key="..\:/Android projects/Projects 2022/SSBT Project/From Amit/SSBT Project/Delivery Boy/App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.191" />
+        <entry key="..\:/Android projects/Projects 2022/SSBT Project/From Amit/SSBT Project/Delivery Boy/App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.137" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/drawable/black_btn.xml" value="0.1455" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/drawable/rectangle_left_cure_blue.xml" value="0.1455" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/activity_daily_order_delivery.xml" value="0.25" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/activity_daily_order_detail.xml" value="0.22685185185185186" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/activity_dashboard.xml" value="0.22685185185185186" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/activity_delivery_completed.xml" value="0.22685185185185186" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/activity_dshboard.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/activity_flash.xml" value="0.22685185185185186" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/activity_main.xml" value="0.22685185185185186" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/activity_not_register_delivery_boy.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/activity_order_detaild.xml" value="0.22685185185185186" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/activity_otp.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/activity_profile.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/activity_view_orders.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/delivery_confurmation.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/oder_list.xml" value="0.22685185185185186" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/oders_product_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/order_cancel_confurmation.xml" value="0.29322916666666665" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/order_cancel_reason_dialog.xml" value="0.22685185185185186" />
+        <entry key="..\:/SSBT Project/Delivery Boy/App/app/src/main/res/layout/progress_dialog.xml" value="0.29322916666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

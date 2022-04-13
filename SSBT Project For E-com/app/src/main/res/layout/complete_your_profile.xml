@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:backgroundTint="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/closeDialog"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_close"
+            app:tint="@color/txt_black"
+            android:padding="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/anim"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/closeDialog"
+            app:lottie_rawRes="@raw/complete_profile"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_width="200dp"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:id="@+id/txt"
+            android:text="Your profile is incomplete, Please complete your profile first..."
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_below="@id/anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/complete_your_profileBTN"
+            android:layout_below="@+id/txt"
+            android:text="Complete Your Profile"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/blue_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

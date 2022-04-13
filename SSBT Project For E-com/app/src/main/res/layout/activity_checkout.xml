@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activity.CheckoutActivity">
+
+    <include layout="@layout/toolbar_filter" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="@string/delivery_address"
+                android:textColor="@color/smoke_gray"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/updateAddress"
+                android:background="@drawable/ripple_effect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_addressCheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_effect"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:text="@string/home_n2982_robinson_lane_hackberry"
+                    android:textColor="@color/txt_black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ripple_effect"
+                    android:layout_gravity="center"
+                    android:rotation="270"
+                    android:src="@drawable/ic_down_arrow_black"
+                    app:tint="@color/txt_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15.8dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/smoke_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="@string/deliverynote"
+                android:textColor="@color/smoke_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/noteForOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/background"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:textColor="@color/txt_black"
+                android:padding="10dp"
+                android:elevation="10dp"
+                android:hint="Enter any note" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16.2dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/li_online"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_gray_boxprofile"
+                    android:orientation="horizontal"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="18dp"
+                    android:paddingRight="13dp"
+                    android:layout_marginRight="7.5dp"
+                    android:paddingBottom="18dp">
+
+                    <RadioButton
+                        android:id="@+id/razorpay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:buttonTint="@color/txt_black"
+                        android:text="@string/razorpay"
+                        android:textColor="@color/txt_black"
+                        android:textSize="15sp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/li_delivery"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_gray_boxprofile"
+                    android:orientation="horizontal"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="18dp"
+                    android:paddingRight="13dp"
+                    android:layout_marginLeft="7.5dp"
+                    android:paddingBottom="18dp">
+
+                    <RadioButton
+                        android:id="@+id/cod"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:buttonTint="@color/txt_black"
+                        android:text="@string/cash_on_delivery"
+                        android:textColor="@color/txt_black"
+                        android:textSize="15sp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="159dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/total_price"
+                    android:textColor="@color/smoke_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/totlaAmountPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:text="@string/_24"
+                    android:textColor="@color/txt_black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10.8dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/smoke_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10.2dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/delivery_fees"
+                    android:textColor="@color/smoke_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:text="@string/free"
+                    android:textColor="@color/txt_black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10.2dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/discount"
+                    android:textColor="@color/smoke_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:text="@string/_06"
+                    android:textColor="@color/txt_black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10.8dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/smoke_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10.2dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/grand_total"
+                    android:textColor="@color/txt_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/grandTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:text="@string/_23"
+                    android:textColor="@color/primary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/confirmOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/blue_btn"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="@string/confirm_order"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

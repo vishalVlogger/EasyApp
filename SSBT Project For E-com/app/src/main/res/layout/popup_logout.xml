@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:background="@drawable/rectangle_white_topcure">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20.6dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ic_easy_shop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="26.7dp"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="@string/log_out"
+        android:textColor="@color/txt_black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20.7dp"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        android:text="@string/are_you_sure_you_want_to_logout"
+        android:textColor="@color/txt_black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="37dp"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:paddingBottom="34dp">
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/red_btn"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:paddingLeft="41.3dp"
+            android:paddingRight="41.7dp"
+            android:text="@string/no"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/black_btn"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:paddingLeft="41.3dp"
+            android:paddingRight="41.7dp"
+            android:text="@string/yes"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

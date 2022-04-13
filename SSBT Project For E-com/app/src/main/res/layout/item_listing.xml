@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/rectangle_gray_border_home"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_product"
+        android:layout_width="103dp"
+        android:layout_height="95dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rectangle_gray_box_home"
+        app:riv_border_color="@color/transparent"
+        app:riv_border_width="0dip"
+        app:riv_corner_radius="10dp"
+        app:riv_mutate_background="true"
+        app:riv_oval="false"
+        app:riv_tile_mode="clamp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="13dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:layout_below="@id/pack"
+                android:text="Weight"
+                android:textColor="@color/green"
+                android:textSize="10dp" />
+            <TextView
+                android:id="@+id/pack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:text="@string/_1_ltr"
+                android:textColor="@color/green"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/deleteFromDailyOrderList"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_delete"
+                android:layout_width="30dp"
+                android:layout_height="35dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:text="@string/coriander_product_ntitle_will_be_here"
+            android:textColor="@color/txt_black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:text="MRP :"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:text="@string/_12"
+                android:gravity="start"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:layout_marginLeft="10dp"
+                android:text="QTY :"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/productContity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:text="5"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Grand Total:"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/totalAmount"
+                android:text="200/-Rs"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

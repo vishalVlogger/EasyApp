@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/rectangle_gray_border_home"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/rectangle_left_cure_blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:paddingBottom="14dp">
+
+        <TextView
+            android:id="@+id/txt_orderNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_no_876543"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:textColor="@color/txt_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/_29_april_01_21_pm"
+            android:textColor="@color/subtxt_gray"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/txt_way"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="@string/on_the_way"
+                android:textColor="@color/subtxt_gray"
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_pro_display_regular"/>
+            <TextView
+                android:id="@+id/txt_item_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_x_3"
+                android:textColor="@color/subtxt_gray"
+                android:textSize="13sp"
+                android:layout_marginRight="9dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_pro_display_regular"/>
+            <TextView
+                android:id="@+id/txt_dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_24"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro_display_semibold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

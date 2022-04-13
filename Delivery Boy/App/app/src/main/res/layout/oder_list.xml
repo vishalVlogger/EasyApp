@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/rectangle_one_side"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/rectangle_left_cure_blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:paddingBottom="14dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/orderId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order no : 876543"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:textColor="@color/txt_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="29 April-01:21 PM"
+                android:textColor="@color/subtxt_gray"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/orderdUserName"
+            android:layout_below="@+id/orderId"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="Chetan Girnare"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/userContactNumber"
+            android:layout_below="@+id/orderdUserName"
+            android:layout_width="wrap_content"
+            android:text="9174129123"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/deliveryAddress"
+            android:layout_below="@+id/userContactNumber"
+            android:text="plot no 15A prabhat colony jalgaon."
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_margin="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+     <TextView
+         android:id="@+id/orderId"
+         android:text="ORD0010"
+         android:padding="10dp"
+         android:textStyle="bold"
+         android:textColor="@color/black"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/orderdUserName"
+            android:layout_below="@+id/orderId"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:text="Chetan Girnare"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/userContactNumber"
+            android:layout_below="@+id/orderdUserName"
+            android:layout_width="wrap_content"
+            android:text="9174129123"
+            android:padding="5dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/deliveryAddress"
+            android:layout_below="@+id/userContactNumber"
+            android:padding="10dp"
+            android:text="plot no 15A prabhat colony jalgaon."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_below="@+id/deliveryAddress"
+            android:layout_alignParentRight="true"
+            android:text="12/03/2021"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>-->

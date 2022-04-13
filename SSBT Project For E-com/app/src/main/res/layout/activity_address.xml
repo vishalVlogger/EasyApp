@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activity.AddressActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_filter" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAddressList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="16dp"
+        android:overScrollMode="never" />
+
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/btn_address"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="19dp"
+        android:src="@drawable/ic_add_more" />
+
+    <Button
+        android:id="@+id/btn_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle_green"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="@string/delivery_to_this_address"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

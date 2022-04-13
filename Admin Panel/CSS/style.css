@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+*
+{
+    font-family: 'Lora', serif;
+}
+body
+{
+    background-color: rgb(244, 242, 242);
+}
+ #navbar
+{
+    background: #EC5F5F; 
+    width: 100%; 
+    padding: 10px 10px;
+    top: 0;
+    height: 80px; 
+    position: fixed;
+    z-index: 10;
+}
+.input-group-text
+{
+    border-radius: 0;
+}
+.fa-bars
+{
+    font-size: 30px;
+    color: #fff; 
+    /*margin-top: 20px;*/
+}
+/*sidebar and main content style*/
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  left: 0;
+  background-color: #b43c3c;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  /*font-size: 18px;*/
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar .onlink
+{
+    color: #fff;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+ 
+  color: white;
+  padding:15px;
+  /*padding: 10px 15px;*/
+  border: none;
+}
+
+/*.openbtn:hover {
+  background-color: #444;
+}*/
+
+#main {
+    margin-top: 80px;
+    margin-left: 250px;
+  transition: margin-left .5s;
+  padding: 16px;
+    overflow-x: hidden;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.opImg
+{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.mainContain
+{
+    padding: 10px 20px;
+}
+.form-group
+{
+    margin-bottom: 5px;
+}
+.form-control:focus
+{
+    border: 1px solid #EC5F5F;
+    box-shadow: none;
+}
+
+/*add question style*/
+.container
+{
+    padding: 30px 40px;
+}
+.form-control
+{
+    border-radius: 0;
+}
+.filebtn
+{
+    padding: .05rem .1rem;
+}
+.filebtnlg
+{
+    padding: .2rem .1rem;
+}
+label
+{
+    font-size: .875rem;
+    margin-bottom: 2px;
+}
+
+hr
+{
+    width: 100% !important;
+    height: 3px;
+    background-color: #b43c3c;
+}
+.smhr
+{
+    height: .5px;
+    background-color: #eae6e6;
+}
+.submenu
+{
+    background-color: #ebebeb;
+}
+.submenu a
+{
+    color: #111;
+}
+.submenu a:hover
+{
+    background-color: #EC5F5F;
+    color: #fff;
+}
+/*option:hover
+{
+    background-color: #353a40;
+}*/
+.iconBtn
+{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    text-align: center;
+    font-size: 1rem;
+}
+.container {
+    padding: 10px 40px;
+}
+.row
+{
+    margin-right: 0;
+    margin-left: 0;
+}
+.myBtn
+{
+    background-color: #EC5F5F;
+}
+
+/*for tag system*/
+.badge
+{
+    font-size: 14px;
+}
+.badge-primary
+{
+    margin: 1px;
+}
+.closetag
+{
+    cursor: pointer;
+}
+.hideDiv
+{
+    display: none;
+}

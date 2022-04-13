@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="237dp"
+    android:orientation="vertical"
+    android:background="@drawable/rectangle_home_gray"
+    tools:context=".fragment.Home1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:background="@drawable/rectangle_home_gray"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:text="@string/_70"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="48sp"
+        android:fontFamily="@font/poppins_bold"
+        android:includeFontPadding="false"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/txt_black"
+        android:text="@string/best_deal_on_nvegetable_s"
+        android:layout_marginLeft="15dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:includeFontPadding="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:paddingRight="18.5dp"
+        android:paddingLeft="19.5dp"
+        android:background="@drawable/rectangle_green_home"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        android:text="@string/shop_now"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+    </LinearLayout>
+</LinearLayout>

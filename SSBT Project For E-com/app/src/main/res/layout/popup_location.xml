@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:paddingBottom="20dp"
+    android:background="@drawable/rectangle_white_topcure">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="24.5dp"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        android:text="@string/no_address_add_yet"
+        android:textColor="@color/txt_black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        android:text="@string/please_add_address_and_come_back"
+        android:textColor="@color/smoke_gray"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/li_locationMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="22.5dp"
+        android:paddingBottom="33.1dp"
+        android:paddingTop="33.7dp"
+        android:background="@drawable/dotted_line_rect_gray"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:id="@+id/img_addressMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_address_more"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

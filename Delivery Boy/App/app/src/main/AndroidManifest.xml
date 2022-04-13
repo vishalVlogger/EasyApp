@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appdroid.ssbt_delivery_boy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.appdroid.ssbt_delivery_boy.OTP.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name="com.appdroid.ssbt_delivery_boy.Activity.Activity.DeliveryCompletedActivity"></activity>
+        <activity android:name="com.appdroid.ssbt_delivery_boy.Activity.Activity.NotRegisterDeliveryBoy" />
+        <activity android:name="com.appdroid.ssbt_delivery_boy.Activity.Activity.DailyOrderDetailActivity" />
+        <activity android:name="com.appdroid.ssbt_delivery_boy.Activity.Activity.DailyOrderDelivery" />
+        <activity android:name="com.appdroid.ssbt_delivery_boy.Activity.Activity.Dashboard" />
+        <activity android:name="com.appdroid.ssbt_delivery_boy.Activity.Activity.OrderDetaild" />
+        <activity android:name="com.appdroid.ssbt_delivery_boy.Activity.Activity.ViewOrders" />
+        <activity android:name="com.appdroid.ssbt_delivery_boy.Activity.Activity.NormalDeliveryActivity" />
+        <activity android:name="com.appdroid.ssbt_delivery_boy.Activity.Activity.Flash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.appdroid.ssbt_delivery_boy.Activity.Activity.Profile" />
+        <activity android:name="com.appdroid.ssbt_delivery_boy.Activity.Activity.Otp" />
+        <activity android:name="com.appdroid.ssbt_delivery_boy.Activity.Activity.LoginActivity" />
+    </application>
+
+</manifest>

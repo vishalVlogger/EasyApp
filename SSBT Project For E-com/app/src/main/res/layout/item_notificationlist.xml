@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_gray_border_home"
+    android:clipToPadding="false"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_Notification"
+        android:layout_width="75dp"
+        android:layout_height="69dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rectangle_gray_box_home"
+        app:riv_border_color="@color/transparent"
+        app:riv_border_width="0dip"
+        app:riv_corner_radius="10dp"
+        app:riv_mutate_background="true"
+        app:riv_oval="false"
+        app:riv_tile_mode="clamp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="17dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:text="@string/your_order_no_876909_from_our_nstore_has_been_processed"
+            android:textColor="@color/txt_black"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginRight="40dp"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/txt_Min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:text="@string/_22_min_ago"
+            android:textColor="@color/subtxt_gray"
+            android:layout_marginTop="9dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>

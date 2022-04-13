@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="12dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="155dp"
+        android:layout_height="229dp">
+
+        <ImageView
+            android:id="@+id/img_Bg"
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            android:background="@drawable/rect_gradient_green" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            android:background="@drawable/shape_payment" />
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="12.6dp"
+            android:layout_marginRight="11.4dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.1dp"
+            android:layout_marginTop="35dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_visa" />
+
+        <TextView
+            android:id="@+id/txt_atmNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.1dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="**** **** **** 3453"
+            android:textColor="@color/white"
+            android:textSize="14.5sp" />
+
+        <TextView
+            android:id="@+id/txt_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15.1dp"
+            android:layout_marginBottom="46.7dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="@string/akshay_syal"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_expireDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15.1dp"
+            android:layout_marginBottom="22.8dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="@string/expires_05_19"
+            android:textColor="#ABFFFFFF"
+            android:textSize="13sp" />
+    </FrameLayout>
+</LinearLayout>

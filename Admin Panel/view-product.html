@@ -1,0 +1,355 @@
+<html>
+    <head>
+        <title>View Product</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://printjs-4de6.kxcdn.com/print.min.css">
+    <style>
+        .col-md-3
+        {
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        .card-body
+        {
+            padding: .4rem;
+        }
+        .card-body p
+        {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+    </style>
+    <script>
+        var page = "Product";
+    </script>
+    </head>
+    
+<body>
+<section id="navbar">
+    <div class="float-left" style="padding: 10px;margin-top: 5px;"><a class="openbtn" onclick="openNav()"><i class="fa fa-bars"></i></a></div>
+    <div class="float-right">
+        <img class="" src="IMG/wlogo.png" height="60">
+    </div>
+</section>
+<div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <ul class="nav flex-column">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle onlink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-archive"></i> Product</a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="add-product.html">Add Product</a>
+                  <a class="dropdown-item" href="view-product.html">View Product</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bookmark"></i> Category</a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="add-category.html">Add Category</a>
+                  <a class="dropdown-item" href="view-category.html">View Category</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-briefcase"></i> Delivery Boy</a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="add-delivery-boy.html">Add Delivery Boy</a>
+                  <a class="dropdown-item" href="view-delivery-boy.html">View Delivery Boy</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="view-order.html"><i class="fa fa-gift"></i> Orders</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-file-photo-o"></i> Slider</a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="add-slider.html">Add Slider</a>
+                  <a class="dropdown-item" href="view-slider.html">View Slider</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="user-search.html"><i class="fa fa-users"></i> User Search</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="user-request.html"><i class="fa fa-retweet"></i> User Request</a>
+               </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order-summary.html"><i class="fa fa-pencil-square-o"></i> Orders Summary</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="signOut()"><i class="fa fa-sign-out"></i> Logout</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="main">
+       <div class="container">
+           <div id="msg"></div>
+           <h4 class="text-center"><b>View Product</b></h4>
+           <hr>
+           <div class="row justify-content-end mb-3">
+               <button class="btn btn-primary mybtn d-none" style="margin-right: 20px;" id="printList" >Print List</button>
+            <div class="" style="margin-right: 20px;margin-top: 10px;">
+                <label for="showOutp"><input type="checkbox" id="showOutp" onclick="showOutProduct(this.checked)"> Show Out Of Stoch Product</label>
+            </div>
+               <div class="" style="width: 160px;margin-right: 20px;">
+                   <!--<select class="form-control" id="cat" onchange="setSubCat(this.value,subcat),getFilterResult('category','==',this.value)">
+                        <option selected disabled value="">Main Category</option>
+                   </select>-->
+                   <select class="form-control" id="cat" onchange="getFilterResult('category','==',this.value)">
+                        <option selected disabled value="">Main Category</option>
+                   </select>
+               </div>
+               <div class="d-none" style="width: 160px;margin-right: 20px;">
+                   <select class="form-control" id="subcat" onchange="getFilterResult('subCategory','==',this.value)">
+                        <option selected disabled value="">Sub Category</option>
+                   </select>
+               </div>
+               <div class="input-group" style="width: 300px;">
+                   <input class="form-control" id="searchKey" placeholder="Enter Title">
+                   <div class="input-group-append">
+                       <button class="btn btn-primary mybtn" onclick="getFilterResult('keyword','array-contains','')"><i class="fa fa-search"></i></button>
+                   </div>
+               </div>
+           </div>
+           <div class="row justify-content-center">
+                <div class="text-center col-md-8" id="spinner">
+                    <div class="spinner-border text-primary" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center" id="viewDiv">
+
+           </div>
+           <div class="text-center mt-3">
+                <button class="btn btn-primary mybtn d-none" onclick="getSearchResult(this.id)" id="load">Load More</button>
+                <button class="btn btn-primary mybtn d-none" type="button" disabled id="loading">
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Load More
+                </button>
+            </div>
+       </div>
+    </div>
+    
+    <!-- Modal -->
+<div class="modal fade" data-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Product Update</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <div class="form-group">
+                <label>Title</label>
+                <input class="form-control" id="utitle">
+            </div>
+            
+            <label class="mt-2 text-danger">You Want Change Product Image <input type="checkbox" onclick="viewImgDiv(this.checked)" id="ynCheck"></label>
+            
+            <div class="imageBox d-none" id="imgBox">
+            <label>Image Link (Upload Image From Device  &nbsp; 
+            <input class="text-center" type="checkbox" onclick="selectInput(this.checked)" id="checkBox">)</label>
+                <div class="form-group input-group d-none" id="imgGroup">
+                            <input type="file" id="files" class="form-control filebtnlg pb-2 fileEdit" accept="image/*">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary myBtn" id="send"><i class="fa fa-upload"></i> Upload</button>
+                                <button class="btn btn-primary myBtn d-none" id="sending" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    <i class="fa fa-upload"></i> Uploading
+                                </button>
+                                <button class="btn btn-primary myBtn d-none" id="load" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    Loading...
+                                </button>
+                            </div>   
+                        </div>
+                        <p hidden id="uploading"></p>
+                        <div class="form-group" id="textInput">
+                            <input class="form-control" id="url">
+                        </div>
+            </div>
+            
+            
+            
+            <div class="form-group">
+                <label>Discreption</label>
+                <textarea class="form-control" id="udis" rows="5"></textarea>
+            </div>
+            <div class="form-group mb-2">
+                <div id="tagContainer"></div>
+                <label>Search Keyword</label>
+                <input class="form-control" id="keyword">
+                <small>Separate Search Keyword By Space</small>
+            </div>
+            <div class="form-group">
+                <label>Visibility</label>
+                <select id="visible" class="form-control">
+                    <option>show</option>
+                    <option>hide</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Home Visiable</label>
+                <select id="hvisible" class="form-control">
+                    <option>hide</option>
+                    <option>show</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Main Category</label>
+                <select name="" id="ucat" class="form-control" onchange="getDataList(this.value)">
+                    <option selected disabled value="">Select</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <label>Unit</label>
+                    <select id="uunit" class="form-control" onchange="setUnit(this.value)">
+                        <option selected disabled value="">Select</option>
+                        <option>kg</option>
+                        <option>liter</option>
+                        <option>pcs</option>
+                        <option>dozen</option>
+                    </select>
+                </div>
+                
+                <label>Quntity</label>
+                <div class="form-group mb-2">
+                    <div class="input-group-append">
+                        <input type="text" class="form-control" id="uquntity">
+                        <span class="input-group-text" id="unitTag"></span>
+                    </div>
+                </div>
+    
+                 <p class="mt-2"><b>Pack Details</b></p>
+                 <div class="table-responsive mt-3 mainDiv">
+                    <table class="table table-bordered text-center" id="recordTable">
+                        <thead class="tablehead">
+                            <tr>
+                                <th scope="col">Pack</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">MRP</th>
+                                <th scope="col" colspan="2">Op.</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+
+                        </tbody>
+                    </table>
+                </div>
+                
+            <!--<div class="sellDiv">-->
+               <p><b>Add Pack</b></p>
+               <div class="form-row" id="sellDiv">
+                   <div class="form-group col-md-3">
+                       <input class="form-control" id="sellDigit" placeholder="Digit">
+                   </div>
+                   <div class="form-group col-md-3">
+                       <select class="form-control" id="sellUnit"> 
+                       </select>
+                   </div>
+                   <div class="form-group col-md-3">
+                       <input type="text" class="form-control" id="subPrice" placeholder="Price">
+                   </div>
+                   <div class="form-group col-md-3">
+                       <input type="text" class="form-control" id="subMrp" placeholder="MRP">
+                   </div>
+                   <!--<div class="form-group col-md-12">-->
+                       <button class="btn btn-primary btn-block myBtn mt-2" onclick="saveSellUnit()">Add Pack</button>
+                   <!--</div>-->
+               </div>
+            <!--</div>-->
+              
+            <label>Similar Product Tag</label>
+            <div class="form-group input-group">
+                <input class="form-control" id="semproduct" list="spsuggest">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" onclick="dbTagSave()">Save Tag</button>
+                </div>
+            </div>
+            <datalist id="spsuggest">
+            </datalist>
+
+            <div id="sptagContainer" class="mt-2"></div>
+            <label>Suggest Product Tags</label>
+            <div class="form-group">
+                <input class="form-control" id="spkeyword">
+                <small>Separate Tag By Space</small>
+            </div>
+
+            <input type="hidden" id="updateId">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="checkImgUpdate()">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<!-- .hideDiv -->
+    <div class="row hideDiv" id="printDiv">
+        <div class="col-md-12">
+            <div class="text-center mb-3">
+                <img src="IMG/printlogo.png" height="60">
+            </div>
+            <hr>
+            <h3 class="text-center" id="plh"><b>Out of stock product list</b></h3>
+            <div class="table-responsive mt-4 ">
+                <table class="table table-bordered">
+                    <thead class="tablehead">
+                        <tr>
+                           <th scope="col">Sr. No.</th>
+                           <th scope="col">Product Name</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listTableBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<!-- print out of product div -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/browser-image-compression@latest/dist/browser-image-compression.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-messaging.js"></script>
+<script src="JS/dbConnection.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+<script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+   
+<script src="JS/logout.js"></script>
+<script src="JS/comUpload.js"></script>
+<script src="JS/view-product.js"></script>   
+<script src="JS/notification.js"></script>   
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
+    </body>
+</html>

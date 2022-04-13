@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Fragment.CartFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        app:cardElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/card_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="@string/cart"
+            android:textColor="@color/pureBlack"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/cardEmptyLayout"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_bucket_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22.5dp"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="@string/no_items_in_your_cart"
+        android:textColor="@color/txt_black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:text="@string/your_favourite_items_are_njust_a_click_away"
+        android:textColor="@color/smoke_gray"
+        android:textAlignment="center"
+        android:lineSpacingExtra="5dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/startShopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginTop="21.5dp"
+        android:background="@drawable/rectangle_green_btn"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        android:text="@string/start_shopping"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cardRecyclerView"
+            android:layout_above="@+id/priceBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/priceBar"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_marginBottom="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <TextView
+                android:id="@+id/txt"
+                android:text="Cart Value : ₹"
+                android:textSize="18sp"
+                android:textColor="@color/txt_black"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/totalAmount"
+                android:text="200Rs/-"
+                android:textSize="18sp"
+                android:textColor="@color/txt_black"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/checkoutBTN"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_btn"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:text="@string/checkout"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/totalAmount"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
